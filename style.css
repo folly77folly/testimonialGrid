@@ -1,0 +1,201 @@
+
+@import url('https://fonts.google.com/specimen/Barlow+Semi+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;1,500&display=swap');
+body{
+    /* font-size: 13px; */
+    font-family: Barlow Semi Condensed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.article_container{
+    height: 100%;
+    width: 90%;
+    background-color: hsl(210, 46%, 95%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 10px 10px 15px rgb(221, 210, 210);
+
+}
+.article_container section{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article_container__item{
+    width: 100%;
+    /* max-height: 100%; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 50%; */
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.article_container__item div{
+    border-radius: 5px;
+    
+}
+
+div{
+    /* border: 1px solid black; */
+}
+.item-a {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* height: 100%;
+    overflow: hidden; */
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    box-shadow: -10px 5px 10px rgb(221, 210, 210);
+    background : url('images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-color: hsl(263, 55%, 52%);
+    background-position-x: 400px;
+  }
+  .item-b{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    overflow: hidden;
+    height: 100%;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: -10px 5px 10px rgb(221, 210, 210);
+
+
+  }
+  .item-c{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    /* overflow: hidden;
+    height: 100%; */
+    grid-row-end: 3;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 10px 5px 20px rgb(204, 201, 201);
+
+  }
+
+  .item-d{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: hsl(0, 0%, 100%);
+    color : black;
+    box-shadow: 15px 15px 20px rgb(204, 201, 201);
+    /* overflow: hidden;
+    height: 100%; */
+
+  }
+  .item-e{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: -10px 5px 10px rgb(221, 210, 210);
+    /* overflow: hidden;
+    height: 100%; */
+  }
+  .card {
+      padding: 10px;
+  }
+
+
+  .card_image_name{
+      display: flex;
+      align-items: center;
+  }
+
+  .card_image_name img{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+  }
+
+  /* .card_image_name p{
+    color:  hsl(0, 0%, 100%);
+} */
+
+.card_image_name span{
+    opacity: 50%;
+}
+.Card_image_title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Card_image_note p{
+    /* color: hsl(0, 0%, 100%); */
+    opacity: 70%;
+    font-size: 15px;
+}
+.name p{
+    padding: 0;
+    margin: 0;
+}
+
+/*
+Mobile responsiveness
+*/
+@media only screen and (max-width: 900px) {
+
+    .article_container__item{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: repeat(8, 1fr); */
+        grid-row-gap: 15px;
+    }
+
+    .item-a {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      .item-b{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    
+      }
+      
+      .item-d{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    
+      }
+
+      
+      .item-e{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    
+      }
+
+      .item-c{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    
+      }
+
+
+
+
+
+}
